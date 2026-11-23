@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Escape - Game</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/vendor/phaser.min.js"></script>
+    <script type="module" src="js/game/main.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">Play Game</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="register.html" id="registerLink">Register</a>
+
+            <span id="loggedInUser" hidden></span>
+            <button id="logoutButton" type="button" hidden>Logout</button>
+        </nav>
+
+    </header>
+
+    <main>
+
+        
+
+        <section class="game-page">
+            <h1>Cyber Escape</h1>
+
+            <p>Collect the stolen data</p>
+
+        
+            <div class="game-info">
+                <p>Level: <span id="level">1</span></p>
+                <p>Score: <span id="score">0</span></p>
+                <p>Data: <span id="dataCollected">0</span>/<span id="dataTotal">5</span></p>
+                <p>Time: <span id="timer">10</span></p>
+                
+            </div>
+
+            <div id="gameContainer"></div>
+
+           
+
+            <p id="gameMessage" aria-live="polite"></p>
+
+           
+
+            <div class="game-controls">
+                <button id="restartButton" type="button">Restart</button>
+            </div>
+
+            
+
+            <div class="game-instruction">
+                <h2>Controls</h2>
+                <p>Use the WASD keys to move your character.</p>
+                <p>Collect all the data fragments to unlock the exit</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+</body>
+</html>

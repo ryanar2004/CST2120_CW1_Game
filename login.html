@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <script src="js/navigation.js" defer></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cyber Escape - Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/login.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">Play Game</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="register.html" id="registerLink">Register</a>
+
+            <span id="loggedInUser" hidden></span>
+            <button id="logoutButton" type="button" hidden>Logout</button>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="account-page">
+            <h1>Login</h1>
+
+            <p>Welcome back to Cyber Escape!</p>
+            <p>Login to play the game and save your scores</p>
+
+
+            <form id="loginForm" class="account-form" novalidate>
+
+                
+            <label for="loginUsername">Username or Email:</label>
+            <input type="text" id="loginUsername" autocomplete="username">
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" autocomplete="current-password">
+ 
+            <button type="submit">Login</button>
+            </form>
+
+            <p id="loginMessage" aria-live="polite"></p>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register here</a>
+
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

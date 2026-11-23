@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Escape - Game</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navigation.js" defer></script>
+    <script src="js/rankings.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">Play Game</a>
+            <a href="rankings.html">Rankings</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <a href="register.html" id="registerLink">Register</a>
+
+            <span id="loggedInUser" hidden></span>
+            <button id="logoutButton" type="button" hidden>Logout</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="rankings-page">
+            <h1>Rankings</h1>
+
+            <table id="rankingsTable">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Username</th>
+                        <th> High Score</th>
+                    </tr>
+                </thead>
+                <tbody id="rankingsBody">
+                    <tr>
+                        <td colspan="3">No scores available yet</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+
+</body>
+</html>
+
