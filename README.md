@@ -19,8 +19,8 @@ https://ryanar2004.github.io/Cyber-Escape-Game/
 ## Key Features
 - Three levels with increasing difficulty
 - You only have 10 seconds to complete the game in each level
-- User registration and login with password hashing.
-- Leaderboard that tracks players highest scores.
+- User registration and login with password hashing
+- Leaderboard that tracks players highest scores
 
 ## Author
 
